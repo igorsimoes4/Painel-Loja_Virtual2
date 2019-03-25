@@ -4,16 +4,16 @@ require 'environment.php';
 $config = array();
 if(ENVIRONMENT == 'development') {
 	define("BASE_URL", "http://localhost/nova_loja_painel/");
-	$config['dbname'] = 'loja2';
+	$config['dbname'] = 'loja_nova';
 	$config['host'] = 'localhost';
 	$config['dbuser'] = 'root';
-	$config['dbpass'] = 'root';
+	$config['dbpass'] = '';
 } else {
 	define("BASE_URL", "http://localhost/nova_loja_painel/");
-	$config['dbname'] = 'loja2';
+	$config['dbname'] = 'loja_nova';
 	$config['host'] = 'localhost';
 	$config['dbuser'] = 'root';
-	$config['dbpass'] = 'root';
+	$config['dbpass'] = '';
 }
 
 global $db;
